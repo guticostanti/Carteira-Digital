@@ -29,7 +29,7 @@
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('CPF ou CNPJ') }}</label>
 
                             <div class="col-md-6">
-                                <input id="cpf_cnpj" type="cpf_cnpj" class="form-control @error('cpf_cnpj') is-invalid @enderror" name="cpf_cnpj" value="{{ old('cpf_cnpj') }}" required autocomplete="cpf_cnpj">
+                                <input id="cpf_cnpj" type="text" class="form-control @error('cpf_cnpj') is-invalid @enderror" name="cpf_cnpj" value="{{ old('cpf_cnpj') }}" required autocomplete="cpf_cnpj">
 
                                 @error('cpf_cnpj')
                                     <span class="invalid-feedback" role="alert">
